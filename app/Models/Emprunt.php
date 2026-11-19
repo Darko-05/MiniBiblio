@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Emprunt extends Model
 {
-    //
+    use HasFactory;
+
+    protected $fillable = [
+        'date_retour_effective',
+    ];
 }

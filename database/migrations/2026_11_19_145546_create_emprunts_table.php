@@ -16,9 +16,11 @@ return new class extends Migration
             $table->timestamps();
             $table->foreignId('membre_id')->constrained('membres')->onDelete('cascade');
             $table->foreignId('livre_id')->constrained('livres')->onDelete('cascade');
-            $table->date('date_retour');
+            // La date d'emprunt est le jour de l'emprunt par défaut
+            $table->date('date_emprunt')->default(now());
+            // La date de retour prevue est la date d'emprunt + 14 jours
             $table->date('date_retour_prevue')->default(now()->addDay(14));
-            $table->date('date_retour_effective');
+            $table->date('date_retour_effective')->nullable();
         });
     }
 

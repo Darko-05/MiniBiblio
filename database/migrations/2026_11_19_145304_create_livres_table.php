@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('titre');
             $table->string('auteur');
             $table->string('isbn', 13)->unique();
-            $table->integer('nombreTotalExemplaire');
+            $table->integer('nombre_total_exemplaires');
         });
     }
 
