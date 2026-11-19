@@ -38,5 +38,21 @@ php artisan serve
 
 ```Objectif principal : Terminer le backend au minimum representant le socle de toute l'application quitte a laisser le frontend```
 
+Ce qui a été fait :
+
+* Initialiser du projet et installation des packages
+* La création des migrations et des modèles de données
+* Création du controller des livres et ses routes
+
+Ce qui n'a pas été fait :
+
+* La finalisation des controllers et des routes
+* Test des api avec Bruno
+* Création des données de seeding
+
+Avec 2h de plus :
+
+* Finir la construction des controllers et des routes avec le retour en json de chaque requêtes
+
 L'utilisation de PostgreSQL necessite de créer une base de données Postgres et de remplacer les données d'environnement dans le .env, étant donné un test technique de 2h, j'ai choisi d'utiliser sqlite pour developper rapidement en local, plus facile a tester
 
